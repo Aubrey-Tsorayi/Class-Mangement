@@ -1,6 +1,6 @@
 import sqlite3
 
-
+#uncomment the section below to create table and database
 """con = sqlite3.connect('students.db')
 c = con.cursor()
 c.execute('''CREATE TABLE students (
@@ -16,7 +16,7 @@ print('Done!')
 con.commit()
 con.close()"""
 
-#adding student info
+#adding student
 def add(stud,name,surname):
 	con = sqlite3.connect('students.db')
 	c = con.cursor()
@@ -25,6 +25,7 @@ def add(stud,name,surname):
 	con.commit()
 	con.close()
 
+#deleting student
 def delete(stud):
 	con = sqlite3.connect('students.db')
 	c = con.cursor()
@@ -41,7 +42,8 @@ def delete(stud):
 	else:
 		print("Option chosen is invaild, Please Try agian.")
 
-def search():
+#searching for a student
+def search(stud):
 	stud = input("Enter Student number: ")
 	con = sqlite3.connect('students.db')
 	c = con.cursor()
@@ -51,25 +53,70 @@ def search():
 	con.commit()
 	con.close()
 
-
-def all(math,english,gp,history):
+#updating maths mark
+def math():
 	con = sqlite3.connect('students.db')
 	c = con.cursor()
-	marks = [(math),(english),(gp),(history)]
-	c.execute("INSERT INTO students (Math,English,GP,History) VALUES (?,?,?,?)",marks)
+	stud = input("Enter Student number: ")
+	math = eval(input("Enter Math Percentage: "))
+	if math>0 and math<100:
+		c.execute("UPDATE students SET Math =?  WHERE StudID =?",(math,stud))
+		print("Mark has been updated")
+	else:
+		print("Mark out range")
 	con.commit()
 	con.close()
 
-
-
-def math(stud,math):
+#updating english mark
+def english():
 	con = sqlite3.connect('students.db')
 	c = con.cursor()
-	studid = 'SELECT StudID FROM students WHERE StudID = ?'
-	result = c.execute(delete,(studid,))
-	maths = math
-	c.execute("INSERT INTO students (Math) WHERE StudID = ? VALUES (?)",maths)
+	stud = input("Enter Student number: ")
+	english = eval(input("Enter English Percentage: "))
+	if english>0 and english<100:
+		c.execute("UPDATE students SET English =?  WHERE StudID =?",(english,stud))
+		print("Mark has been updated")
+	else:
+		print("Mark out range")
 	con.commit()
 	con.close()
 
+#updating gp mark
+def gp():
+	con = sqlite3.connect('students.db')
+	c = con.cursor()
+	stud = input("Enter Student number: ")
+	gp = eval(input("Enter G.P Percentage: "))
+	if gp>0 and gp<100:
+		c.execute("UPDATE students SET GP =?  WHERE StudID =?",(gp,stud))
+		print("Mark has been updated")
+	else:
+		print("Mark out range")
+	con.commit()
+	con.close()
 
+#updating history mark
+def history():
+	con = sqlite3.connect('students.db')
+	c = con.cursor()
+	stud = input("Enter Student number: ")
+	history = eval(input("Enter History Percentage: "))
+	if history>0 and history<100:
+		c.execute("UPDATE students SET History =?  WHERE StudID =?",(history,stud))
+		print("Mark has been updated")
+	else:
+		print("Mark out range")
+	con.commit()
+	con.close()
+
+#Showing the whole class
+def table():
+	con = sqlite3.connect('students.db')
+	c = con.cursor()
+	c.execute("SELECT * FROM  students")
+	results = c.fetchall()
+
+	print("STUDID","\tNAME","\tSNAME","\tMATHS","\tENGLI","\tGENP","\tHIST")
+	print("-----------------------------------------------------------")
+	for results in results:
+		print(results[0] , "\t" , results[1] , "\t" , results[2] , "\t" , results[3] , "\t" , results[4] , "\t" , results[5] , "\t" , results[6])

@@ -1,5 +1,6 @@
 import database
 
+
 print("////////////////////////")
 print("    Class records       ")
 print("////////////////////////")
@@ -7,9 +8,9 @@ print("////////////////////////")
 while True:
 	print("                                               ")
 	print("/// Selcet an option ///")
-	choice = eval(input("1. Add student 2. Delete Student 3. Add marks 4. Show student table 5. Quit  :"))
+	choice = eval(input("1. Add student\n2. Delete Student\n3. Add marks\n4. Show student table\n5. Search for a student\n6. Quit\nOption: "))
 
-	#choice 1
+	#choice 1 adding
 	if choice == 1:
 
 		counter = eval(input("Enter number of students to be entered: "))
@@ -19,42 +20,43 @@ while True:
 			name = input("Enter student name: ")
 			surname = input("Enter student surname: ")
 			database.add(stud,name,surname)
-
+	#choice 2 deleting
 	elif choice == 2:
 		print("////////////////////////////////////////////////////////////////")
 		print("    You about to delte a record be sure before proceeding       ")
 		print("////////////////////////////////////////////////////////////////")
 		stud = input("Enter Student Number: ")
 		database.delete(stud)
-
+	#choice 3 updating
 	elif choice == 3:
 		print("/// Welcome to mark update///")
-		stud = input("Enter Student Number: ")
 		print("///Choose an option///")
-		mark = eval(input("1. Math 2. English 3. GP 4. History 5. All : "))
+		mark = eval(input("1. Math\n2. English\n3. GP\n4. History\nOption : "))
 
 		if mark == 1:
-			math = input("Enter Math Percentage: ")
-			if math > 0 and math < 100:
-				database.math(math,stud)
+			database.math()
+
 		elif mark == 2:
-			english = input("Enter English Percentage: ")
+			database.english()
 
 		elif mark == 3:
-			gp = input("Enter General Paper Percentage: ")
+			database.gp()
 
 		elif mark == 4:
-			history = input("Enter History Percentage: ")
-
-		elif mark == 5:
-			math = input("Enter Math Percentage: ")
-			english = input("Enter English Percentage: ")
-			gp = input("Enter General Paper Percentage: ")
-			history = input("Enter History Percentage: ")
-			database.all(stud,math,english,gp,history)
+			database.history()
 		else:
 			print("Invalid option, try again")
 
-		
-print("Test Complete")
-		
+	#choice 4 data presentation
+	elif choice == 4:
+		database.table()
+
+	#choce 5 searching
+	elif choice == 5:
+		database.search()
+
+	elif choice == 6:
+		print("///////////////////////////")
+		print("         Thank You         ")
+		print("///////////////////////////")
+		break		
