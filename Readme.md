@@ -1,7 +1,7 @@
-# Header H1
+# Project Name
 Class Mangement System (Terminal Verson
 
-## Sub Topic Headings H2
+## Description
 This is a simple program that takes in students and manges them in easy way. They are option to delete a student, search for a student, show tables and graphs.
 
 Author: Tutsirayi Tsorayi
