@@ -1,4 +1,5 @@
 import database
+import graph
 
 
 print("////////////////////////")
@@ -8,11 +9,11 @@ print("////////////////////////")
 while True:
 	print("                                               ")
 	print("/// Selcet an option ///")
-	choice = eval(input("1. Add student\n2. Delete Student\n3. Add marks\n4. Show student table\n5. Search for a student\n6. Quit\nOption: "))
+	choice = eval(input("1. Add student\n2. Delete Student\n3. Add marks\n4. Show student table\n5. Search for a student\n6. Graph\n7. Quit\nOption: "))
 
 	#choice 1 adding
 	if choice == 1:
-
+		
 		counter = eval(input("Enter number of students to be entered: "))
 
 		for i in range(counter):
@@ -56,6 +57,9 @@ while True:
 		database.search()
 
 	elif choice == 6:
+		graph.graph()
+
+	elif choice == 7:
 		print("///////////////////////////")
 		print("         Thank You         ")
 		print("///////////////////////////")
