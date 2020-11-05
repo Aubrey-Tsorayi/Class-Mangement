@@ -1,5 +1,6 @@
 import sqlite3
 
+
 #uncomment the section below to create table and database
 """con = sqlite3.connect('students.db')
 c = con.cursor()
@@ -43,12 +44,14 @@ def delete(stud):
 		print("Option chosen is invaild, Please Try agian.")
 
 #searching for a student
-def search(stud):
+def search():
 	stud = input("Enter Student number: ")
 	con = sqlite3.connect('students.db')
 	c = con.cursor()
 	find ="SELECT * FROM students WHERE StudID = '{}'".format(stud)
 	c.execute(find)
+	print("STUDID","\tNAME","\tSNAME","\tMATHS","\tENGLI","\tGENP","\tHIST")
+	print("-----------------------------------------------------------")
 	print(c.fetchone())
 	con.commit()
 	con.close()
@@ -120,3 +123,5 @@ def table():
 	print("-----------------------------------------------------------")
 	for results in results:
 		print(results[0] , "\t" , results[1] , "\t" , results[2] , "\t" , results[3] , "\t" , results[4] , "\t" , results[5] , "\t" , results[6])
+
+		
