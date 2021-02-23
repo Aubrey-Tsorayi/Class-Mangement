@@ -1,18 +1,25 @@
 import database
+
 import graph
 
-
-print("////////////////////////")
-print("    Class records       ")
-print("////////////////////////")
+print("Class records")
 
 while True:
-	print("                                               ")
-	print("/// Selcet an option ///")
-	choice = eval(input("1. Add student\n2. Delete Student\n3. Add marks\n4. Show student table\n5. Search for a student\n6. Graph\n7. Quit\nOption: "))
+    print("Select an option")
+	print("""
+    add: Add student
+    delete: Delete student
+    marks: Add marks to a student
+    students: Show student table
+    search: Search for a student
+    graph: Graph
+    quit: Quit
+    """)
+
+	choice = input(">> ")
 
 	#choice 1 adding
-	if choice == 1:
+	if choice.lower() == "add":
 		
 		counter = eval(input("Enter number of students to be entered: "))
 
@@ -22,18 +29,24 @@ while True:
 			surname = input("Enter student surname: ")
 			database.add(stud,name,surname)
 	#choice 2 deleting
-	elif choice == 2:
+	elif choice.lower() == "delete":
 		print("////////////////////////////////////////////////////////////////")
 		print("    You about to delte a record be sure before proceeding       ")
 		print("////////////////////////////////////////////////////////////////")
 		stud = input("Enter Student Number: ")
 		database.delete(stud)
 	#choice 3 updating
-	elif choice == 3:
+	elif choice.lower() == "marks":
 		print("/// Welcome to mark update///")
 		print("///Choose an option///")
-		mark = eval(input("1. Math\n2. English\n3. GP\n4. History\nOption : "))
+		option = print("""
+		math: adding maths marks
+		english: adding english marks
+		gp: adding gp marks
+		history: adding history marks
+		""")
 
+		mark = input(">>: ")
 		if mark == 1:
 			database.math()
 
@@ -49,18 +62,18 @@ while True:
 			print("Invalid option, try again")
 
 	#choice 4 data presentation
-	elif choice == 4:
+	elif choice,lower() == "students":
 		database.table()
 
 	#choce 5 searching
-	elif choice == 5:
+	elif choice.lower() == "search":
 		database.search()
 
-	elif choice == 6:
+	elif choice.lower() == "graph":
 		graph.graph()
 
-	elif choice == 7:
-		print("///////////////////////////")
-		print("         Thank You         ")
-		print("///////////////////////////")
-		break		
+	elif choice == "quit":
+		print("THANK YOU")
+		break	
+	else:
+		print("Invalid option, try again")	

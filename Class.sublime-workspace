@@ -1,0 +1,349 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"b",
+				"binary_search"
+			],
+			[
+				"arr",
+				"arr"
+			],
+			[
+				"Vi",
+				"VibrantInk"
+			],
+			[
+				"ba",
+				"backgroundImageOpacity"
+			],
+			[
+				"F",
+				"FF6600"
+			],
+			[
+				"cu",
+				"cursorColor"
+			],
+			[
+				"his",
+				"history"
+			],
+			[
+				"e",
+				"english"
+			],
+			[
+				"Englis",
+				"english"
+			],
+			[
+				"G",
+				"GP"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"S",
+				"Surname"
+			],
+			[
+				"M",
+				"MySQLdb"
+			],
+			[
+				"my",
+				"mystudents"
+			],
+			[
+				"stu",
+				"stud"
+			],
+			[
+				"se",
+				"search"
+			],
+			[
+				"st",
+				"students"
+			],
+			[
+				"Stud",
+				"StudID"
+			],
+			[
+				"studid",
+				"studid"
+			],
+			[
+				"ST",
+				"StudID"
+			],
+			[
+				"En",
+				"English"
+			],
+			[
+				"c",
+				"cancel"
+			],
+			[
+				"stud",
+				"stud"
+			],
+			[
+				"student",
+				"student"
+			],
+			[
+				"studi",
+				"studid"
+			],
+			[
+				"Stu",
+				"StudID"
+			],
+			[
+				"first",
+				"firstname"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"las",
+				"lastname"
+			],
+			[
+				"f",
+				"firstname"
+			],
+			[
+				"studen",
+				"students"
+			],
+			[
+				"con",
+				"connect"
+			],
+			[
+				"co",
+				"con"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"cus",
+				"customers"
+			],
+			[
+				"it",
+				"items"
+			],
+			[
+				"i",
+				"items"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install package control",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Abbey/Desktop/Projects/Search and Sort/BinarySearch_Iterative.py",
+		"/C/Users/Abbey/Desktop/Projects/Class Mangement/Class.py",
+		"/C/Users/Abbey/Desktop/Projects/Class Mangement/database.py",
+		"/C/Users/Abbey/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json",
+		"/C/Users/Abbey/Desktop/Projects/Class Mangement/data.py",
+		"/C/Users/Abbey/Desktop/Projects/Class Mangement/login.py",
+		"/C/Users/Abbey/Desktop/Projects/Class Mangement/tester.py",
+		"/C/Users/Abbey/Desktop/Projects/Calculator/calc.py",
+		"/C/Users/Abbey/Desktop/Projects/Login/Login.py",
+		"/C/Users/Abbey/Desktop/Projects/Login/database.py",
+		"/C/Users/Abbey/Desktop/Projects/records/School records.py",
+		"/C/Users/Abbey/Desktop/Projects/records/Myclass.py",
+		"/C/Users/Abbey/Desktop/Login/database.py",
+		"/C/Users/Abbey/Desktop/Login/Login.py",
+		"/C/Users/Abbey/Desktop/records/School records.py",
+		"/C/Users/Abbey/Desktop/table/Module HelloWorld.vbs",
+		"/C/Users/Abbey/Desktop/table/window.py",
+		"/C/Users/Abbey/Desktop/records/Myclass.py",
+		"/C/Users/Abbey/Desktop/table/Module HelloWorld.vb",
+		"/C/Users/Abbey/Desktop/Calculator/calc.py",
+		"/C/Users/Abbey/Desktop/Hangman/hangman.py",
+		"/C/Users/Abbey/Desktop/Login/password.py",
+		"/C/Users/Abbey/Desktop/records/class.py",
+		"/C/Users/Abbey/AppData/Roaming/Sublime Text 3/Packages/User/Python_Run.sublime-build",
+		"/C/sqlite/database.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Python_Run.sublime-build",
+	"project": "Class.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

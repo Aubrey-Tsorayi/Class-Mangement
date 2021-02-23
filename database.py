@@ -22,9 +22,12 @@ def add(stud,name,surname):
 	con = sqlite3.connect('students.db')
 	c = con.cursor()
 	info = [(stud),(name),(surname)]
-	c.execute("INSERT INTO students (StudID,Name,Surname) VALUES (?,?,?)",info)
-	con.commit()
-	con.close()
+	try: #to check if student ID aready taken
+		c.execute("INSERT INTO students (StudID,Name,Surname) VALUES (?,?,?)",info)
+		con.commit()
+		con.close()
+	except sqlite3.IntegrityError:
+		print("Student ID already used")
 
 #deleting student
 def delete(stud):
@@ -124,4 +127,3 @@ def table():
 	for results in results:
 		print(results[0] , "\t" , results[1] , "\t" , results[2] , "\t" , results[3] , "\t" , results[4] , "\t" , results[5] , "\t" , results[6])
 
-		
