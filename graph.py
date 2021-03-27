@@ -1,6 +1,7 @@
 import sqlite3
 import matplotlib.pyplot as plt
 
+
 # calculating average of subjects
 def graph():
     con = sqlite3.connect("students.db")
@@ -21,7 +22,7 @@ def graph():
         startangle=90,
         shadow=True,
         explode=(0, 0, 0.1, 0),
-        radius=1.2,
+        radius=1,
         autopct="%1.1f%%",
     )
 
@@ -31,4 +32,35 @@ def graph():
     plt.legend()
 
     # showing the plot
+    plt.show()
+
+
+def student_average(stud):
+    con = sqlite3.connect("students.db")
+    c = con.cursor()
+    find = "SELECT Name, Surname FROM students WHERE StudID = '{}'".format(stud)
+    c.execute(find)
+    student_name = c.fetchone()
+    result = "SELECT Math, English, GP, History FROM students WHERE StudID = '{}'".format(stud)
+    c.execute(result)
+    results = c.fetchone()
+
+    data = ["Math", "English", "GP", "History"]
+
+    colours = ["r", "g", "y", "b"]
+
+    left = [1, 2, 3, 4]
+
+    plt.bar(left,
+            results,
+            tick_label=data,
+            width=0.8,
+            color=colours)
+
+    plt.xlabel('Subjects')
+
+    plt.ylabel('Percentage/%')
+
+    plt.title("Subject percentages for: " + str(student_name[0]) + " " + str(student_name[1]))
+
     plt.show()
